@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: product-management-system
+  description: Manages catalog tenants
+spec:
+  owner: "group:default/users"
+  domain: shared
