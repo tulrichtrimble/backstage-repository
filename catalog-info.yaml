@@ -1,8 +1,25 @@
 apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: shared
+  description: Cross-cutting platform capabilities
+spec:
+  owner: "group:default/users"
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: accounting
+  description: Construction finance in project management
+spec:
+  owner: artist-relations-team
+  subdomainOf: project-management
+---
+apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: product-management-system
-  description: Manages catalog tenants
+  name: productmanagement
+  description: "Manages software tenant provisioning and licensing"
 spec:
   owner: "group:default/users"
   domain: shared
@@ -15,10 +32,10 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: dir:.
 spec:
-  type: service
+  type: Service
   lifecycle: experimental
   owner: "group:default/users"
-  system: "ProductManagement"
+  system: "productmanagement"
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -28,7 +45,103 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: dir:.
 spec:
+  type: Service
+  lifecycle: experimental
+  owner: "group:default/users"
+  system: "productmanagement"
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: tyler-vista-test-system
+  description: "A Vista construction ERP"
+spec:
+  owner: "group:default/users"
+  domain: shared
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tyler-vista-application
+  description: "Core Vista"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: WebApp
+  lifecycle: experimental
+  owner: "group:default/users"
+  system: "productmanagement"
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: entitlement-management-system
+  description: "Entitlement and License Management"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  owner: "group:default/users"
+  domain: shared
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ems
+  description: "Entitlement Management Service"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
   type: service
   lifecycle: experimental
   owner: "group:default/users"
-  system: "ProductManagement"
+  system: "entitlement-management-system"
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: license-manager
+  description: "Entitlement Management Service"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/users"
+  system: "entitlement-management-system"
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: trimble-admin-system
+  description: "Trimble Admin Console (Account Experience)"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  owner: "group:default/users"
+  domain: shared
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: axp
+  description: "Trimble Admin Console"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: WebApp
+  lifecycle: experimental
+  owner: "group:default/users"
+  system: "trimble-admin-system"
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: onboard-manager
+  description: "Onboard Manager (AXP backend)"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/users"
+  system: "trimble-admin-system"
