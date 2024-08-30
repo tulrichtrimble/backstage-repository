@@ -31,6 +31,8 @@ metadata:
   description: "Orchestrates software tenant provisioning and licensing"
   annotations:
     backstage.io/techdocs-ref: dir:.
+  tags:
+    - idesign-mgr
 spec:
   type: Service
   lifecycle: experimental
@@ -44,6 +46,9 @@ metadata:
   description: "Registers software tenants and locates instances"
   annotations:
     backstage.io/techdocs-ref: dir:.
+  tags:
+    - idesign-resource-access
+    - idesign-mgr
 spec:
   type: Service
   lifecycle: experimental
@@ -66,6 +71,8 @@ metadata:
   description: "Core Vista"
   annotations:
     backstage.io/techdocs-ref: dir:.
+  tags:
+    - idesign-mgr
 spec:
   type: WebApp
   lifecycle: experimental
@@ -90,11 +97,40 @@ metadata:
   description: "Entitlement Management Service"
   annotations:
     backstage.io/techdocs-ref: dir:.
+  tags:
+    - idesign-resource-access
 spec:
   type: service
   lifecycle: experimental
   owner: "group:default/users"
   system: "entitlement-management-system"
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: iam-management
+  description: "Identity and Access Management System"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/users"
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: iam-manager
+  description: "Identity and Access Management Public API"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - idesign-mgr
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/users"
+  system: "iam-management"
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -103,6 +139,8 @@ metadata:
   description: "Entitlement Management Service"
   annotations:
     backstage.io/techdocs-ref: dir:.
+  tags:
+    - idesign-engine
 spec:
   type: service
   lifecycle: experimental
@@ -127,6 +165,8 @@ metadata:
   description: "Trimble Admin Console"
   annotations:
     backstage.io/techdocs-ref: dir:.
+  tags:
+    - idesign-client
 spec:
   type: WebApp
   lifecycle: experimental
@@ -140,6 +180,8 @@ metadata:
   description: "Onboard Manager (AXP backend)"
   annotations:
     backstage.io/techdocs-ref: dir:.
+  tags:
+    - idesign-mgr
 spec:
   type: service
   lifecycle: experimental
