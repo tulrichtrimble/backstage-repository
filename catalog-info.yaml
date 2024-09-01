@@ -9,16 +9,24 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Domain
 metadata:
+  name: project-management
+  description: Project Management domain
+spec:
+  owner: "group:default/users"
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
   name: accounting
   description: Construction finance in project management
 spec:
-  owner: artist-relations-team
+  owner: "group:default/users"
   subdomainOf: project-management
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: productmanagement
+  name: product-management-system
   description: "Manages software tenant provisioning and licensing"
 spec:
   owner: "group:default/users"
@@ -37,7 +45,7 @@ spec:
   type: Service
   lifecycle: experimental
   owner: "group:default/users"
-  system: "productmanagement"
+  system: "product-management-system"
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -53,7 +61,7 @@ spec:
   type: Service
   lifecycle: experimental
   owner: "group:default/users"
-  system: "productmanagement"
+  system: "product-management-system"
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
@@ -77,7 +85,7 @@ spec:
   type: WebApp
   lifecycle: experimental
   owner: "group:default/users"
-  system: "productmanagement"
+  system: "tyler-vista-test-system"
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
