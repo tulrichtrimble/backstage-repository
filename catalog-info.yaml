@@ -106,7 +106,7 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: dir:.
   tags:
-    - idesign-resource-access
+    - idesign-mgr
 spec:
   type: service
   lifecycle: experimental
@@ -143,7 +143,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: license-manager
+  name: license-engine
   description: "Entitlement Management Service"
   annotations:
     backstage.io/techdocs-ref: dir:.
@@ -195,3 +195,51 @@ spec:
   lifecycle: experimental
   owner: "group:default/users"
   system: "trimble-admin-system"
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: workflow-engine-system
+  description: "Runs Elsa workflows"
+spec:
+  owner: "group:default/users"
+  domain: shared
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: workflow-engine
+  description: "Runs Elsa workflows"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - idesign-engine
+spec:
+  type: Service
+  lifecycle: experimental
+  owner: "group:default/users"
+  system: "workflow-engine-system"
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: dx-system
+  description: "Digital Experience System"
+spec:
+  owner: "group:default/users"
+  domain: shared
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dx-salesforce-api
+  description: "Salesforce"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - idesign-mgr
+spec:
+  type: Service
+  lifecycle: experimental
+  owner: "group:default/users"
+  system: dx-system
