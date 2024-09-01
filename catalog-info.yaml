@@ -147,7 +147,7 @@ spec:
   type: service
   lifecycle: experimental
   owner: "group:default/users"
-  system: "iam-management"
+  system: iam-management-system
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
