@@ -9,6 +9,15 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Domain
 metadata:
+  name: identity
+  description: Construction finance in project management
+spec:
+  owner: "group:default/users"
+  subdomainOf: shared
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
   name: project-management
   description: Project Management domain
 spec:
@@ -70,7 +79,7 @@ metadata:
   description: "A Vista construction ERP"
 spec:
   owner: "group:default/users"
-  domain: shared
+  domain: accounting
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -116,14 +125,14 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: iam-management
+  name: iam-management-system
   description: "Identity and Access Management System"
   annotations:
     backstage.io/techdocs-ref: dir:.
 spec:
-  type: service
   lifecycle: experimental
   owner: "group:default/users"
+  domain: identity
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
