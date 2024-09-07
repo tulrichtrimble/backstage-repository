@@ -366,6 +366,19 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
+  name: vpid
+  description: "ViewPoint authorization server"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: Service
+  lifecycle: experimental
+  owner: "group:default/users"
+  system: construction-authorization-system
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
   name: policy-registry
   description: "Data store for authorization policies"
   annotations:
