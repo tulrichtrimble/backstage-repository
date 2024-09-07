@@ -327,19 +327,6 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: authorization-engine
-  description: "Open Policy Agent"
-  annotations:
-    backstage.io/techdocs-ref: dir:.
-spec:
-  type: Service
-  lifecycle: experimental
-  owner: "group:default/users"
-  system: construction-authorization-system
----
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
   name: data-distributor
   description: "emits authorization attributes"
   annotations:
@@ -355,6 +342,19 @@ kind: Component
 metadata:
   name: vo-authorization
   description: "stores authorization data"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: Service
+  lifecycle: experimental
+  owner: "group:default/users"
+  system: construction-authorization-system
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: authorization-engine
+  description: "Open Policy Agent"
   annotations:
     backstage.io/techdocs-ref: dir:.
 spec:
