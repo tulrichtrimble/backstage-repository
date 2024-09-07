@@ -54,7 +54,7 @@ metadata:
     - idesign-mgr
 spec:
   type: Service
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: "product-management-system"
 ---
@@ -69,7 +69,7 @@ metadata:
     - idesign-resource-access
 spec:
   type: Service
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: "product-management-system"
 ---
@@ -95,7 +95,7 @@ metadata:
     - idesign-mgr
 spec:
   type: WebApp
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: "tyler-vista-test-system"
 ---
@@ -110,7 +110,7 @@ metadata:
     - idesign-mgr
 spec:
   type: WebApp
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: "tyler-vista-test-system"
 ---
@@ -138,7 +138,7 @@ metadata:
     - idesign-mgr
 spec:
   type: service
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: "entitlement-management-system"
 ---
@@ -152,7 +152,7 @@ metadata:
   tags:
     - idesign-mgr
 spec:
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   domain: identity
 ---
@@ -167,7 +167,7 @@ metadata:
     - idesign-mgr
 spec:
   type: service
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: iam-management-system
 ---
@@ -182,7 +182,7 @@ metadata:
     - idesign-client
 spec:
   type: service
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: iam-management-system
 ---
@@ -197,7 +197,7 @@ metadata:
     - idesign-resource-access
 spec:
   type: service
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: iam-management-system
 ---
@@ -212,7 +212,7 @@ metadata:
     - idesign-engine
 spec:
   type: service
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: "entitlement-management-system"
 ---
@@ -240,7 +240,7 @@ metadata:
     - idesign-client
 spec:
   type: WebApp
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: "trimble-admin-system"
 ---
@@ -255,7 +255,7 @@ metadata:
     - idesign-mgr
 spec:
   type: service
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: "trimble-admin-system"
 ---
@@ -281,7 +281,7 @@ metadata:
     - idesign-engine
 spec:
   type: Service
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: "workflow-engine-system"
 ---
@@ -307,7 +307,7 @@ metadata:
     - idesign-mgr
 spec:
   type: Service
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: dx-system
 ---
@@ -333,7 +333,7 @@ metadata:
     backstage.io/techdocs-ref: dir:.
 spec:
   type: Service
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: construction-authorization-system
 ---
@@ -346,7 +346,7 @@ metadata:
     backstage.io/techdocs-ref: dir:.
 spec:
   type: Service
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: construction-authorization-system
 ---
@@ -359,7 +359,7 @@ metadata:
     backstage.io/techdocs-ref: dir:.
 spec:
   type: Service
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: construction-authorization-system
 ---
@@ -372,7 +372,7 @@ metadata:
     backstage.io/techdocs-ref: dir:.
 spec:
   type: Service
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: construction-authorization-system
 ---
@@ -385,7 +385,7 @@ metadata:
     backstage.io/techdocs-ref: dir:.
 spec:
   type: Service
-  lifecycle: experimental
+  lifecycle: tyler-demo
   owner: "group:default/users"
   system: construction-authorization-system
 ---
