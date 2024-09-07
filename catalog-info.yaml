@@ -405,7 +405,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: Analytics Data Pipeline
+  name: analytics-data-pipeline
   description: Data integration pipeline
   annotations:
     backstage.io/techdocs-ref: dir:.
