@@ -137,7 +137,7 @@ metadata:
   tags:
     - idesign-mgr
 spec:
-  type: service
+  type: Service
   lifecycle: experimental
   owner: "group:default/users"
   system: "entitlement-management-system"
@@ -166,7 +166,7 @@ metadata:
   tags:
     - idesign-mgr
 spec:
-  type: service
+  type: Service
   lifecycle: experimental
   owner: "group:default/users"
   system: iam-management-system
@@ -181,7 +181,7 @@ metadata:
   tags:
     - idesign-client
 spec:
-  type: service
+  type: Service
   lifecycle: experimental
   owner: "group:default/users"
   system: iam-management-system
@@ -196,7 +196,7 @@ metadata:
   tags:
     - idesign-resource-access
 spec:
-  type: service
+  type: Service
   lifecycle: experimental
   owner: "group:default/users"
   system: iam-management-system
@@ -211,7 +211,7 @@ metadata:
   tags:
     - idesign-engine
 spec:
-  type: service
+  type: Service
   lifecycle: experimental
   owner: "group:default/users"
   system: "entitlement-management-system"
@@ -254,7 +254,7 @@ metadata:
   tags:
     - idesign-mgr
 spec:
-  type: service
+  type: Service
   lifecycle: experimental
   owner: "group:default/users"
   system: "trimble-admin-system"
@@ -392,7 +392,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: construction-enterprise-mgt
+  name: construction-authorization-mgt
   description: ViewPoint Identity Authentication and Authorization Subsystem
   annotations:
     backstage.io/techdocs-ref: dir:.
