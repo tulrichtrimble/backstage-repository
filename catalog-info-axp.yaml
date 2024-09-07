@@ -1,0 +1,50 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: shared
+  description: Cross-cutting platform capabilities
+spec:
+  owner: "group:default/users"
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: trimble-admin-system
+  description: "Trimble Admin Console (Account Experience)"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - idesign-mgr
+spec:
+  owner: "group:default/users"
+  domain: shared
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: axp
+  description: "Trimble Admin Console"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - idesign-client
+spec:
+  type: WebApp
+  lifecycle: experimental
+  owner: "group:default/users"
+  system: "trimble-admin-system"
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: onboard-manager
+  description: "Onboard Manager (AXP backend)"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - idesign-mgr
+spec:
+  type: Service
+  lifecycle: experimental
+  owner: "group:default/users"
+  system: "trimble-admin-system"

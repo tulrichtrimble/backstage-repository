@@ -390,22 +390,24 @@ spec:
   system: construction-authorization-system
 ---
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: Component
 metadata:
   name: analytics-data-pipeline
   description: Data integration pipeline
   annotations:
     backstage.io/techdocs-ref: dir:.
   tags:
-    - idesign-mgr
+    - idesign-utility
 spec:
+  type: Service
+  lifecycle: experimental
   owner: "group:default/users"
-  domain: shared
+  system: construction-authorization-system
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: construction-analytics
+  name: construction-analytics-system
   description: Analytics
   annotations:
     backstage.io/techdocs-ref: dir:.
@@ -413,4 +415,3 @@ metadata:
     - idesign-mgr
 spec:
   owner: "group:default/users"
-  domain: shared
