@@ -4,7 +4,7 @@ metadata:
   name: shared
   description: Cross-cutting platform capabilities
 spec:
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Domain
@@ -12,7 +12,7 @@ metadata:
   name: identity
   description: Construction finance in project management
 spec:
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   subdomainOf: shared
 ---
 apiVersion: backstage.io/v1alpha1
@@ -21,7 +21,7 @@ metadata:
   name: project-management
   description: Project Management domain
 spec:
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Domain
@@ -29,7 +29,7 @@ metadata:
   name: accounting
   description: Construction finance in project management
 spec:
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   subdomainOf: project-management
 ---
 apiVersion: backstage.io/v1alpha1
@@ -40,7 +40,7 @@ metadata:
   tags:
     - idesign-mgr
 spec:
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   domain: shared
 ---
 apiVersion: backstage.io/v1alpha1
@@ -55,7 +55,7 @@ metadata:
 spec:
   type: Service
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: "product-management-system"
 ---
 apiVersion: backstage.io/v1alpha1
@@ -70,7 +70,7 @@ metadata:
 spec:
   type: Service
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: "product-management-system"
 ---
 apiVersion: backstage.io/v1alpha1
@@ -81,7 +81,7 @@ metadata:
   tags:
     - idesign-mgr
 spec:
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   domain: accounting
 ---
 apiVersion: backstage.io/v1alpha1
@@ -96,7 +96,7 @@ metadata:
 spec:
   type: WebApp
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: "tyler-vista-test-system"
 ---
 apiVersion: backstage.io/v1alpha1
@@ -111,7 +111,7 @@ metadata:
 spec:
   type: WebApp
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: "tyler-vista-test-system"
 ---
 apiVersion: backstage.io/v1alpha1
@@ -124,7 +124,7 @@ metadata:
   tags:
     - idesign-mgr
 spec:
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   domain: shared
 ---
 apiVersion: backstage.io/v1alpha1
@@ -139,7 +139,7 @@ metadata:
 spec:
   type: service
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: "entitlement-management-system"
 ---
 apiVersion: backstage.io/v1alpha1
@@ -153,7 +153,7 @@ metadata:
     - idesign-mgr
 spec:
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   domain: identity
 ---
 apiVersion: backstage.io/v1alpha1
@@ -168,7 +168,7 @@ metadata:
 spec:
   type: service
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: iam-management-system
 ---
 apiVersion: backstage.io/v1alpha1
@@ -183,7 +183,7 @@ metadata:
 spec:
   type: service
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: iam-management-system
 ---
 apiVersion: backstage.io/v1alpha1
@@ -198,7 +198,7 @@ metadata:
 spec:
   type: service
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: iam-management-system
 ---
 apiVersion: backstage.io/v1alpha1
@@ -213,7 +213,7 @@ metadata:
 spec:
   type: service
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: "entitlement-management-system"
 ---
 apiVersion: backstage.io/v1alpha1
@@ -226,7 +226,7 @@ metadata:
   tags:
     - idesign-mgr
 spec:
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   domain: shared
 ---
 apiVersion: backstage.io/v1alpha1
@@ -241,7 +241,7 @@ metadata:
 spec:
   type: WebApp
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: "trimble-admin-system"
 ---
 apiVersion: backstage.io/v1alpha1
@@ -256,7 +256,7 @@ metadata:
 spec:
   type: service
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: "trimble-admin-system"
 ---
 apiVersion: backstage.io/v1alpha1
@@ -267,7 +267,7 @@ metadata:
   tags:
     - idesign-mgr
 spec:
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   domain: shared
 ---
 apiVersion: backstage.io/v1alpha1
@@ -282,7 +282,7 @@ metadata:
 spec:
   type: Service
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: "workflow-engine-system"
 ---
 apiVersion: backstage.io/v1alpha1
@@ -293,7 +293,7 @@ metadata:
   tags:
     - idesign-mgr
 spec:
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   domain: shared
 ---
 apiVersion: backstage.io/v1alpha1
@@ -308,7 +308,7 @@ metadata:
 spec:
   type: Service
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: dx-system
 ---
 apiVersion: backstage.io/v1alpha1
@@ -321,7 +321,7 @@ metadata:
   tags:
     - idesign-mgr
 spec:
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   domain: shared
 ---
 apiVersion: backstage.io/v1alpha1
@@ -334,7 +334,7 @@ metadata:
 spec:
   type: Service
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: construction-authorization-system
 ---
 apiVersion: backstage.io/v1alpha1
@@ -347,7 +347,7 @@ metadata:
 spec:
   type: Service
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: construction-authorization-system
 ---
 apiVersion: backstage.io/v1alpha1
@@ -360,7 +360,7 @@ metadata:
 spec:
   type: Service
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: construction-authorization-system
 ---
 apiVersion: backstage.io/v1alpha1
@@ -373,7 +373,7 @@ metadata:
 spec:
   type: Service
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: construction-authorization-system
 ---
 apiVersion: backstage.io/v1alpha1
@@ -386,7 +386,7 @@ metadata:
 spec:
   type: Service
   lifecycle: tyler-demo
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   system: construction-authorization-system
 ---
 apiVersion: backstage.io/v1alpha1
@@ -399,7 +399,7 @@ metadata:
   tags:
     - idesign-mgr
 spec:
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   domain: shared
 ---
 apiVersion: backstage.io/v1alpha1
@@ -412,7 +412,7 @@ metadata:
   tags:
     - idesign-mgr
 spec:
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   domain: shared
 ---
 apiVersion: backstage.io/v1alpha1
@@ -425,5 +425,5 @@ metadata:
   tags:
     - idesign-mgr
 spec:
-  owner: "group:default/users"
+  owner: "user:tyler_ulrich"
   domain: shared
