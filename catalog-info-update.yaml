@@ -392,19 +392,6 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: construction-authorization-mgt
-  description: ViewPoint Identity Authentication and Authorization Subsystem
-  annotations:
-    backstage.io/techdocs-ref: dir:.
-  tags:
-    - idesign-mgr
-spec:
-  owner: "group:default/users"
-  domain: shared
----
-apiVersion: backstage.io/v1alpha1
-kind: System
-metadata:
   name: analytics-data-pipeline
   description: Data integration pipeline
   annotations:
