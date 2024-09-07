@@ -327,7 +327,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: authorization engine
+  name: authorization-engine
   description: "Open Policy Agent"
   annotations:
     backstage.io/techdocs-ref: dir:.
