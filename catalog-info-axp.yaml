@@ -33,6 +33,14 @@ spec:
   lifecycle: experimental
   owner: "group:default/users"
   system: "trimble-admin-system"
+  technologies:
+    - JavaScript
+    - React
+  standards:
+    - name: ADR1
+      link: https://example.com/standard1
+    - name: RFC2
+      link: https://example.com/standard2
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
