@@ -34,7 +34,7 @@
             },
             {
                 "tag": "database",
-                "shape": "cylinder"
+                "shape": "Cylinder"
             }
         ]
     }
