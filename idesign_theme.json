@@ -35,6 +35,10 @@
             {
                 "tag": "database",
                 "shape": "Cylinder"
+            },
+            {
+                "tag": "messaging",
+                "shape": "Pipe"
             }
         ]
     }
