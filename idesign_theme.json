@@ -31,6 +31,10 @@
                 "tag": "idesign-utility",
                 "background": "#ead1dc",
                 "color": "#252a2e"
+            },
+            {
+                "tag": "database",
+                "shape": "cylinder"
             }
         ]
     }
