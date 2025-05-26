@@ -3,6 +3,13 @@
     "description": "This theme is based on the iDesign color palette.",
     "elements": [
         {
+            "tag": "Software System",
+            "shape": "roundedBox",
+            "background": "#0063a3",
+            "color": "#ffffff"
+            
+        },
+        {
                 "tag": "idesign-client",
                 "background": "#d9ead3",
                 "color": "#252a2e"
